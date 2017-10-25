@@ -24,7 +24,7 @@ public class UserController {
         return "index";
     }
 
-    @PostMapping("/users")
+//    @PostMapping("/users")
     public String formPost(Model model, ServerWebExchange serverWebExchange){
 
         // using a reactive way to get form data instead of using request parameters (Spring MVC).
@@ -40,6 +40,17 @@ public class UserController {
         }
 
         model.addAttribute("users", apiService.getUsers(limit));
+
+        return "userlist";
+    }
+
+    @PostMapping("/users")
+    public String formPostReactive(Model model, ServerWebExchange serverWebExchange){
+
+        model.addAttribute("users",
+                apiService.getUsers(serverWebExchange
+                .getFormData()
+                .map(data -> new Integer(data.getFirst("limit")))));
 
         return "userlist";
     }
