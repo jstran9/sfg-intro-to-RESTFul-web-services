@@ -1,6 +1,9 @@
-[![CircleCI](https://circleci.com/gh/springframeworkguru/spring-rest-client-examples.svg?style=svg)](https://circleci.com/gh/springframeworkguru/spring-rest-client-examples)
-# Spring Rest Client Examples
+# Spring Rest Client Examples (from John Thompson's Spring Framework 5 - Beginner to Guru course).
 
-This repository is for an example application built in my Spring Framework 5 - Beginner to Guru
 
-You can learn about my Spring Framework 5 Online course [here.](http://courses.springframework.guru/p/spring-framework-5-begginer-to-guru/?product_id=363173)
+- https://www.udemy.com/spring-framework-5-beginner-to-guru/?start=0
+
+
+# Other info:
+
+- I am creating this repository to practice more with basic Git commands.
